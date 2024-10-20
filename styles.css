@@ -61,109 +61,6 @@ a {
 	}
 }
 
-
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: Arial, sans-serif;
-}
-
-body {
-	background-color: #1c1c2b;
-	color: white;
-	padding: 20px;
-}
-
-.education-section {
-	max-width: 1000px;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.education-box {
-	background-color: #1f1f2d;
-	border-radius: 10px;
-	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
-	margin: 20px 35px;  /* Reduce the margin between boxes */
-	padding: 30px;   /* Reduce the padding within the box */
-	display: flex;
-	justify-content: space-between;
-	position: relative;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-	max-width: 100%;
-
-}
-
-.education-box:hover {
-	transform: scale(1.05);
-	box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.7);
-}
-
-.left-content, .right-content {
-	width: 45%; /* Keep content equally divided */
-}
-
-.Topic{
-	margin-top: 85px;
-	text-align: center;
-
-}
-
-h3 {
-	font-size: 1.2rem; /* Slightly reduce the font size */
-	margin-bottom: 8px;
-}
-
-h4 {
-	font-size: 1rem; /* Slightly reduce the font size */
-	margin-bottom: 8px;
-}
-
-p {
-	font-size: 1rem;
-	margin-bottom: 8px;
-}
-
-ul {
-	list-style-type: none;
-	font-size: 1.0rem;
-	text-align: left;
-}
-
-li {
-	margin-bottom: 6px;
-}
-
-.status-button {
-	background-color: #343a40;
-	color: white;
-	border: none;
-	padding: 5px 12px;
-	border-radius: 5px;
-	font-size: 0.85rem;
-	cursor: default;
-}
-
-.status-button.full-time {
-	background-color: #4caf50;
-}
-
-.status-button.part-time {
-	background-color: #ff9800;
-}
-
-/* Box divider line */
-.education-box::after {
-	content: '';
-	position: absolute;
-	height: 70%;
-	width: 1px;
-	background-color: #555;
-	top: 15%;
-	left: 50%;
-}
-
 nav {
 	display: flex;
 	align-items: center;
@@ -484,6 +381,147 @@ h1 {
 		transform: translateX(-50%);
 	}
 }
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background-color: #1c1c2b;
+	color: white;
+	padding: 20px;
+}
+
+.education {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;  /* Horizontally center the boxes */
+	align-items: flex-start;
+	gap: 20px;
+}
+
+/* Education section with responsive width */
+.education-section {
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
+	width: 90%; /* Make it more responsive */
+}
+
+.education-box {
+	background-color: #1f1f2d;
+	border-radius: 10px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+	margin: 15px auto;
+	padding: 2vw;
+	display: flex;
+	flex-direction: row;  /* Flex row for larger screens */
+	justify-content: space-between;
+	position: relative;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	width: 100%;
+	max-width: 1000px; /* Limit the width for larger screens */
+}
+
+/* Box hover effect */
+.education-box:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Left and Right content for full-size screens */
+.left-content, .right-content {
+	width: 45%; /* Divide content into two sides */
+}
+
+/* Topic margin adjustment */
+.Topic {
+	margin-top: 8vw; /* Adjust based on viewport width */
+	text-align: center;
+}
+
+/* Responsive text sizing */
+h3 {
+	font-size: calc(1.2rem + 0.5vw); /* Adjust with screen size */
+	margin-bottom: 8px;
+}
+
+h4 {
+	font-size: calc(1rem + 0.4vw); /* Adjust with screen size */
+	margin-bottom: 8px;
+}
+
+p {
+	font-size: calc(1rem + 0.3vw); /* Adjust with screen size */
+	margin-bottom: 8px;
+}
+
+/* Responsive list text */
+ul {
+	list-style-type: none;
+	font-size: calc(1rem + 0.3vw);
+	text-align: left;
+}
+
+li {
+	margin-bottom: 6px;
+}
+
+/* Responsive button size */
+.status-button {
+	background-color: #343a40;
+	color: white;
+	border: none;
+	padding: 5px 12px;
+	border-radius: 5px;
+	font-size: calc(0.85rem + 0.2vw); /* Adjust with screen size */
+	cursor: default;
+
+}
+
+/* Status button color classes */
+.status-button.full-time {
+	background-color: #4caf50;
+}
+
+.status-button.part-time {
+	background-color: #ff9800;
+}
+
+/* Box divider line, shown only on large screens */
+.education-box::after {
+	content: '';
+	position: absolute;
+	height: 70%;
+	width: 1px;
+	background-color: #555;
+	top: 15%;
+	left: 50%;
+	transition: opacity 0.3s ease;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+	.education-box {
+		flex-direction: column;  /* Stack content vertically */
+		padding: 5vw;  /* Increase padding for smaller screens */
+	}
+
+	.left-content, .right-content {
+		width: 100%; /* Full width for stacked content */
+	}
+
+	/* Hide the divider on smaller screens */
+	.education-box::after {
+		opacity: 0; /* Make the divider invisible */
+	}
+}
+
 
 
 
