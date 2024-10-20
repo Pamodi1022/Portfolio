@@ -8,35 +8,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./styles.css">
-	<script src="./scripts.js"></script>
-	<link rel="icon" type="image/jpg" href="favicon.png">
+	<link rel="icon" type="image/jpg" href="Pamodi.png">
 </head>
 <body>
 <header>
-<!--			<div class="logo-holder">-->
-<!--				<div class="logo">PP</div> &lt;!&ndash; This is where you can replace 'P' with an image if needed &ndash;&gt;-->
-<!--				<div class="logo-text">Portfolio Website</div>-->
-<!--			</div>-->
-
-
-
-<!--	<nav>-->
-<!--		<div>-->
-<!--			<ul>-->
-<!--				<li id="name">Pamodi Pansiluni</li>-->
-<!--				<li><a href="#">HOME</a></li>-->
-<!--				<li><a href="#skills">SKILLS</a></li>-->
-<!--				<li><a href="#projects">PROJECTS</a></li>-->
-<!--				<li><a href="#contacts">CONTACT</a></li>-->
-<!--			</ul>-->
-<!--		</div>-->
-
-<!--		<a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">-->
-<!--			<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">-->
-<!--				<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>-->
-<!--			</svg>-->
-<!--		</a>-->
-<!--	</nav>-->
 	<nav id="navlist">
 		<input type="checkbox" id="menu-toggle" class="mobile-toggle">
 		<label for="menu-toggle" class="mobile-toggle-label">
@@ -45,12 +20,15 @@
 			</svg>
 		</label>
 		<ul>
-			<li id="name">Pamodi Pansiluni</li>
+			<div class="logo-container">
+				<div id="logo">PP</div>
+				<li id="name">Portfolio Website</li>
+			</div>
 			<div class="nav-links">
 				<li><a href="#">HOME</a></li>
-				<li><a href="#skills">SKILLS</a></li>
-				<li><a href="#projects">PROJECTS</a></li>
-				<li><a href="#contacts">CONTACT</a></li>
+				<li><a href="#.skills">SKILLS</a></li>
+				<li><a href="#.projects">PROJECTS</a></li>
+				<li><a href="#.contacts">CONTACT</a></li>
 			</div>
 		</ul>
 	</nav>
@@ -112,57 +90,91 @@
 			</div>
 		</div>
 	</section>
-	<section id="skills" class="skills container">
-		<h2>
-			<small>About Me</small>
-			Skills
-		</h2>
-		<div class="holder-blue">
-			<div class="left-column">
-				<h3>Frontend</h3>
+	<section class="education-section">
+		<h1 class="Topic">EDUCATION</h1>
+		<div class="education-box">
+			<div class="left-content">
+				<h3><small>BSc(Hons) in Computer Science</small></h3>
+				<p>University of Westminster (IIT, Sri Lanka)</p>
+				<p>2024 - present</p>
+				<button class="status-button full-time">Full Time</button>
+			</div>
+			<div class="right-content">
+				<h4>Extra activities</h4>
 				<ul>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-					<li>React</li>
-					<li>Vue</li>
-					<li>Ember</li>
-				</ul>
-				<h3>Backend</h3>
-				<ul>
-					<li>Spring Boot</li>
-					<li>Node.js</li>
-					<li>Express</li>
+					<li>Volunteer of IEEE IIT</li>
+					<li>Member - Leo club of Colombo Defence Marshals</li>
 				</ul>
 			</div>
-			<div class="right-column">
-				<h3>A bit about me</h3>
-				<p>
-					Hi I'm Pamodi Pansiluni, Computer Science Undergraduate at University of Westminster. Have strong knowledge of JavaScript and various front-end frameworks and libraries Moreover I have a strong knowledge of back-end languages like Python, Java, Springboot, Node.js and databases like mySQL as well. Ierested in exploring Artificial Intelligence.
-				</p>
-				<p>
-					I am currently working as a full time front-end developer at a software company. I'm involved in a project aimed at helping Service Stations manage their internal operations and enabling customers to make online bookings. The project is developed using React and Spring Boot, with AWS used for hosting.
-				</p>
+		</div>
+
+		<div class="education-box">
+			<div class="left-content">
+				<h3><small>Professional Certification<br>Java with Object Oriented Programming</small></h3>
+				<p></p>
+				<p>2024 - May</p>
+				<button class="status-button part-time">Part Time</button>
+			</div>
+			<div class="right-content">
+				<h4>Technologies Learned</small></h4>
+				<p>Java 17 | Java Swing | JavaFX | JDBC (Java Database Connectivity) | MySQL | Hibernate | Spring Boot | HTML5 | CSS3 | JavaScript</p>
 			</div>
 		</div>
 	</section>
-	<section class="skills container">
-		<h2>
-			<small>About Me</small>
-			Ongoing Learnings
-		</h2>
-		<div class="holder-blue">
-			<div class="left-column">
-				<h3>Technologies</h3>
-				<ul>
-					<li>NextJs</li>
-					<li>.NET</li>
-					<li>AWS</li>
-					<li>MongoDB</li>
-				</ul>
 
-				</ul>
-			</div>
+
+
+	<!--	<section id="skills" class="skills container">-->
+<!--		<h2>-->
+<!--			<small>About Me</small>-->
+<!--			Skills-->
+<!--		</h2>-->
+<!--		<div class="holder-blue">-->
+<!--			<div class="left-column">-->
+<!--				<h3>Frontend</h3>-->
+<!--				<ul>-->
+<!--					<li>HTML</li>-->
+<!--					<li>CSS</li>-->
+<!--					<li>JavaScript</li>-->
+<!--					<li>React</li>-->
+<!--					<li>Vue</li>-->
+<!--					<li>Ember</li>-->
+<!--				</ul>-->
+<!--				<h3>Backend</h3>-->
+<!--				<ul>-->
+<!--					<li>Spring Boot</li>-->
+<!--					<li>Node.js</li>-->
+<!--					<li>Express</li>-->
+<!--				</ul>-->
+<!--			</div>-->
+<!--			<div class="right-column">-->
+<!--				<h3>A bit about me</h3>-->
+<!--				<p>-->
+<!--					Hi I'm Pamodi Pansiluni, Computer Science Undergraduate at University of Westminster. Have strong knowledge of JavaScript and various front-end frameworks and libraries Moreover I have a strong knowledge of back-end languages like Python, Java, Springboot, Node.js and databases like mySQL as well. Ierested in exploring Artificial Intelligence.-->
+<!--				</p>-->
+<!--				<p>-->
+<!--					I am currently working as a full time front-end developer at a software company. I'm involved in a project aimed at helping Service Stations manage their internal operations and enabling customers to make online bookings. The project is developed using React and Spring Boot, with AWS used for hosting.-->
+<!--				</p>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</section>-->
+<!--	<section class="skills container">-->
+<!--		<h2>-->
+<!--			<small>About Me</small>-->
+<!--			Ongoing Learnings-->
+<!--		</h2>-->
+<!--		<div class="holder-blue">-->
+<!--			<div class="left-column">-->
+<!--				<h3>Technologies</h3>-->
+<!--				<ul>-->
+<!--					<li>NextJs</li>-->
+<!--					<li>.NET</li>-->
+<!--					<li>AWS</li>-->
+<!--					<li>MongoDB</li>-->
+<!--				</ul>-->
+
+<!--				</ul>-->
+<!--			</div>-->
 			<!-- <div class="right-column">
                 <h3>A bit about me</h3>
                 <p>
@@ -172,56 +184,56 @@
                     I am currently working as a full time front-end developer at a software company. I'm involved in a project aimed at helping Service Stations manage their internal operations and enabling customers to make online bookings. The project is developed using React and Spring Boot, with AWS used for hosting.
                 </p>
             </div> -->
-		</div>
-	</section>
-	<section class="work-experience container">
-		<h2>
-			<small>Recent</small>
-			Work Experience
-		</h2>
-		<div class="jobs">
-			<article>
-				<figure>
-					<div>
-						<img src="workplace-1.jpeg" alt="Workplace 1 - YouTube Creator" width="100%" />
-						<figcaption>
-							Workplace - D F N Technologies (Pvt) Ltd
-						</figcaption>
-					</div>
-				</figure>
-				<h3>D F N Technologies (Pvt) Ltd</h3>
-				<div>2023 May - Current</div>
-				<p>Well-reputed fintech company in Sri Lanka, building platforms for trading.</p>
-			</article>
-			<article>
-				<figure>
-					<div>
-						<img src="workplace-2.jpg" alt="Workplace 2 - iCan Lanka (Pvt) Ltd" width="100%" />
-						<figcaption>
-							Workplace - iCan Lanka (Pvt) Ltd
-						</figcaption>
-					</div>
-				</figure>
-				<h3>iCan Lanka (Pvt) Ltd</h3>
-				<div>20022 Nov - 2023 May</div>
-				<p>E-commerce company recognized for fast delivery and offering free shipping.</p>
-			</article>
-			<!-- <article>
-                <figure>
-                    <div>
-                        <img src="./imgs/workplace-3.jpg" alt="Workplace 3 - Chamber of Commerce" width="100%" />
-                        <figcaption>
-                            Workplace - Chamber of Commerce
-                        </figcaption>
-                    </div>
-                </figure>
-                <h3>Chamber of Commerce</h3>
-                <div>2013-2018</div>
-                <p>A small to large business organisation that helps facilitate advice and support.</p>
-            </article> -->
+<!--		</div>-->
+<!--	</section>-->
+<!--	<section class="work-experience container">-->
+<!--		<h2>-->
+<!--			<small>Recent</small>-->
+<!--			Work Experience-->
+<!--		</h2>-->
+<!--		<div class="jobs">-->
+<!--			<article>-->
+<!--				<figure>-->
+<!--					<div>-->
+<!--						<img src="workplace-1.jpeg" alt="Workplace 1 - YouTube Creator" width="100%" />-->
+<!--						<figcaption>-->
+<!--							Workplace - D F N Technologies (Pvt) Ltd-->
+<!--						</figcaption>-->
+<!--					</div>-->
+<!--				</figure>-->
+<!--				<h3>D F N Technologies (Pvt) Ltd</h3>-->
+<!--				<div>2023 May - Current</div>-->
+<!--				<p>Well-reputed fintech company in Sri Lanka, building platforms for trading.</p>-->
+<!--			</article>-->
+<!--			<article>-->
+<!--				<figure>-->
+<!--					<div>-->
+<!--						<img src="workplace-2.jpg" alt="Workplace 2 - iCan Lanka (Pvt) Ltd" width="100%" />-->
+<!--						<figcaption>-->
+<!--							Workplace - iCan Lanka (Pvt) Ltd-->
+<!--						</figcaption>-->
+<!--					</div>-->
+<!--				</figure>-->
+<!--				<h3>iCan Lanka (Pvt) Ltd</h3>-->
+<!--				<div>20022 Nov - 2023 May</div>-->
+<!--				<p>E-commerce company recognized for fast delivery and offering free shipping.</p>-->
+<!--			</article>-->
+<!--			&lt;!&ndash; <article>-->
+<!--                <figure>-->
+<!--                    <div>-->
+<!--                        <img src="./imgs/workplace-3.jpg" alt="Workplace 3 - Chamber of Commerce" width="100%" />-->
+<!--                        <figcaption>-->
+<!--                            Workplace - Chamber of Commerce-->
+<!--                        </figcaption>-->
+<!--                    </div>-->
+<!--                </figure>-->
+<!--                <h3>Chamber of Commerce</h3>-->
+<!--                <div>2013-2018</div>-->
+<!--                <p>A small to large business organisation that helps facilitate advice and support.</p>-->
+<!--            </article> &ndash;&gt;-->
 
-		</div>
-	</section>
+<!--		</div>-->
+<!--	</section>-->
 	<section class="bento container">
 		<h2>
 			<small>
