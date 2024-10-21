@@ -71,8 +71,8 @@ nav {
 	top: 0;
 	left: 0;
 	width: 100%;
-	/*background: linear-gradient(to top, #2b2a2a, #454444);*/
-	background:url("pic6.jpeg");
+	background: linear-gradient(to top, #5a5959, #acabab);
+
 
 	z-index: 1000;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -97,10 +97,6 @@ nav li#name {
 	font-weight: bold;
 	margin-left: 0;
 	color: var(--base-800);
-
-	&:hover {
-		text-shadow: 0 3px 20px var(--base-100);
-	}
 }
 
 .logo-container {
@@ -146,7 +142,7 @@ nav li a {
 }
 
 .nav-links li a {
-	color: var(--base-100);
+	color: var(--base-800);
 	font-weight: bold;
 
 	&:hover {
@@ -233,36 +229,8 @@ section {
 	}
 }
 
-.button {
-	display:inline-block;
-	padding:10px 30px;
-	background-color:  var(--base);
-	color: var(--base-100);
-	border-radius:10px;
-	transition: ease 0.3s all;
-	&:hover {
-		text-decoration:none;
-		background-color: var(--base-800);
-	}
-	&.white {
-		background-color: white;
-		color: var(--base-800);
-		&:hover {
-			background-color: var(--base-100);
-			color: var(--base-800);
-		}
-	}
-	&.black {
-		background-color: black;
-		color: white;
-		&:hover {
-			background-color: var(--base);
-			color: var(--base-100);
-		}
-	}
-}
 h1 {
-	background-image: url("H1.3.jpg");
+	background-image: url("pic6.jpeg");
 	background-clip: text;
 	color: transparent;
 	background-color: white;
@@ -287,17 +255,17 @@ h1 {
 
 	.hero-blue {
 		flex: 1;
-		background: url("pic6.jpeg");
 		border-radius: 30px;
 		padding: 30px;
 		margin-top: 50px;
 		display: flex;
-		font-weight: bold;
+		background-image: url('pic3.jpg');
+
 
 		&:hover {
 			transform: scale(1.02); /* Slightly enlarges the element on hover */
-			background-color: ghostwhite;
 			transition-duration: 0.5s;
+			box-shadow: 0 6px 20px var(--base-100);
 		}
 
 		span {
@@ -307,8 +275,8 @@ h1 {
 		}
 
 		.text {
-			color: var(--base-800);
-			font-size: 20px;
+			color: var(--base-100);
+			font-size: 22px;
 
 		}
 
@@ -336,37 +304,59 @@ h1 {
 	}
 }
 
+.button {
+	display:inline-block;
+	padding:10px 30px;
+	color: var(--base-100);
+	border-radius:10px;
+	transition: ease 0.3s all;
+	&:hover {
+		text-decoration:none;
+		background-color: var(--base-800);
+	}
+	&.white {
+		background-color: white;
+		color: var(--base-800);
+		font-weight: bold;
+		&:hover {
+			background-color: var(--base-100);
+			color: var(--base-800);
+		}
+	}
+	&.black {
+		background-color: var(--base);;
+		font-weight: bold;
+		color: white;
+		&:hover {
+			background-color: var(--base);
+			color: var(--base-100);
+		}
+	}
+}
+
 .hero-yellow {
 	flex:0.5;
-	border-radius:30px;
+	padding-top: 80px;
+	border-radius: 50%;
 	margin-top: 450px;
 
 	display:flex;
 	justify-content:center;
 	align-items:flex-end;
+	width: 40%;
+	height: 0;
+	background-image: url('pic3.jpg');
+
+	&:hover {
+		transform: scale(1.05);
+		box-shadow: 0 6px 20px var(--base-100);
+	}
+
 	img {
 		margin-bottom: 20px;
 		margin-top:-100px;
 		max-width:400px;
 		align-items: center;
-
-		/* margin-bottom:-10px; */
-	}
-}
-
-
-.hero-yellow {
-	width: 40%;
-	height: 0;
-	background: linear-gradient(to top, #555, darkgray);
-
-
-	padding-top: 80px;
-	border-radius: 50%;
-
-	&:hover {
-		background-color: black; /* Change color on hover */
-		transform: scale(1.05); /* Slightly enlarge the circle on hover */
 	}
 }
 
@@ -438,9 +428,9 @@ body {
 }
 
 .education-box {
-	background-color: #1f1f2d;
+	background-color: black;
 	border-radius: 10px;
-	box-shadow: 0 5px 25px black;
+	box-shadow: var(--base-100);
 	margin: 20px auto;
 	padding: 2vw;
 	display: flex;
@@ -465,7 +455,8 @@ body {
 
 /* Topic margin adjustment */
 .Topic {
-	margin-top: 8vw; /* Adjust based on viewport width */
+	margin-top: 8vw;
+	background-image: url("pic5.jpeg");
 }
 
 
