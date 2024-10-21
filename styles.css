@@ -34,13 +34,15 @@ body {
 	padding: 0;
 	line-height: 1.6;
 
-	background-image: url('back.jpg');
+	background-image: url('pic3.jpg');
 	background-size: cover;
 	background-position: center center;
-
-
-
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
+
+
+
 
 
 header {
@@ -69,7 +71,9 @@ nav {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: linear-gradient(to top, #555, darkgray);
+	/*background: linear-gradient(to top, #2b2a2a, #454444);*/
+	background:url("pic6.jpeg");
+
 	z-index: 1000;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -93,6 +97,10 @@ nav li#name {
 	font-weight: bold;
 	margin-left: 0;
 	color: var(--base-800);
+
+	&:hover {
+		text-shadow: 0 3px 20px var(--base-100);
+	}
 }
 
 .logo-container {
@@ -111,7 +119,7 @@ nav ul {
 }
 
 nav ul li a {
-	color: white;
+	/*color: white;*/
 	text-decoration: none;
 	transition: color 0.3s;
 }
@@ -129,7 +137,7 @@ nav li {
 nav a {
 	display: inline-block;
 	padding: 2px 20px;
-	color: var(--base);
+	/*color: var(--base-100);*/
 }
 
 nav li a {
@@ -137,16 +145,33 @@ nav li a {
 	transition: background-color 0.3s, color 0.3s;
 }
 
-.nav-links li a:hover {
-	background-color:grey;
-	border-radius: 10px;
-	color: black;
-	font-weight: bold;
-}
 .nav-links li a {
-	color: var(--base-800);
+	color: var(--base-100);
+	font-weight: bold;
 
+	&:hover {
+		background-image: url('H1.1.jpg');
+		border-radius: 10px;
+		color: white;
+		font-weight: bold;
+		box-shadow: 0 3px 20px var(--base-100);
+	}
 }
+
+/*.btn-talk {*/
+/*	color: #fff;*/
+/*	text-decoration: none;*/
+/*	padding: 8px 35px;*/
+/*	background: #7d2ae8;*/
+/*	border-radius: 10px;*/
+/*	border: 2px solid #7d2ae8;*/
+/*	font-weight: 500;*/
+/*	transition: .3s;*/
+/*}*/
+/*.btn-talk:hover {*/
+/*	color: #7d2ae8;*/
+/*	background: transparent;*/
+/*}*/
 
 /* Mobile menu toggle */
 .mobile-toggle {
@@ -245,7 +270,6 @@ h1 {
 	line-height: 1;
 	margin-bottom: 10px;
 
-
 	small {
 		display: block;
 		font-weight: 100;
@@ -263,11 +287,12 @@ h1 {
 
 	.hero-blue {
 		flex: 1;
-		background: linear-gradient(to top, #555, darkgray);
+		background: url("pic6.jpeg");
 		border-radius: 30px;
 		padding: 30px;
 		margin-top: 50px;
 		display: flex;
+		font-weight: bold;
 
 		&:hover {
 			transform: scale(1.02); /* Slightly enlarges the element on hover */
@@ -283,6 +308,8 @@ h1 {
 
 		.text {
 			color: var(--base-800);
+			font-size: 20px;
+
 		}
 
 		.call-to-action {
@@ -346,7 +373,7 @@ h1 {
 
 .logos {
 	/*background-color: #1f1f2d;*/
-	background: linear-gradient(to top, black, #1f1f2d);
+	background: transparent;
 	padding: 30px 0;
 	@media (max-width: 1440px) {
 		border-radius: 0;
@@ -428,7 +455,7 @@ body {
 /* Box hover effect */
 .education-box:hover {
 	transform: scale(1.05);
-	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 6px 20px var(--base-100);
 }
 
 /* Left and Right content for full-size screens */
@@ -441,14 +468,15 @@ body {
 	margin-top: 8vw; /* Adjust based on viewport width */
 }
 
-small{
-	color: #cccccc;
-}
 
 /* Responsive text sizing */
 h3 {
 	font-size: calc(1.0rem + 0.5vw); /* Adjust with screen size */
 	margin-bottom: 8px;
+
+	small{
+		color: #cccccc;
+	}
 }
 
 h4 {
