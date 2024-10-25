@@ -345,7 +345,7 @@ h1 {
 	background-image: url('pic3.jpg');
 
 	&:hover {
-		transform: scale(1.05);
+		transform: scale(1.01);
 		box-shadow: 0 6px 20px var(--base-100);
 	}
 
@@ -1086,65 +1086,65 @@ li {
 
 
 
-/* Container */
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 1rem;
-}
+/*!* Container *!*/
+/*.container {*/
+/*	max-width: 1200px;*/
+/*	margin: 0 auto;*/
+/*	padding: 1rem;*/
+/*}*/
 
-/* Blog styles */
-.blogs article {
-	margin-bottom: 2rem;
-}
+/*!* Blog styles *!*/
+/*.blogs article {*/
+/*	margin-bottom: 2rem;*/
+/*}*/
 
-/* Contact form */
-form {
-	display: flex;
-	flex-direction: column;
-}
+/*!* Contact form *!*/
+/*form {*/
+/*	display: flex;*/
+/*	flex-direction: column;*/
+/*}*/
 
-form label {
-	margin: 0.5rem 0;
-}
+/*form label {*/
+/*	margin: 0.5rem 0;*/
+/*}*/
 
-form input, form textarea {
-	padding: 0.5rem;
-	margin-bottom: 1rem;
-	border-radius: 5px;
-	border: 1px solid #ccc;
-}
+/*form input, form textarea {*/
+/*	padding: 0.5rem;*/
+/*	margin-bottom: 1rem;*/
+/*	border-radius: 5px;*/
+/*	border: 1px solid #ccc;*/
+/*}*/
 
-form button {
-	padding: 0.5rem;
-	background-color: #007BFF;
-	color: white;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	transition: background-color 0.3s;
-}
+/*form button {*/
+/*	padding: 0.5rem;*/
+/*	background-color: #007BFF;*/
+/*	color: white;*/
+/*	border: none;*/
+/*	border-radius: 5px;*/
+/*	cursor: pointer;*/
+/*	transition: background-color 0.3s;*/
+/*}*/
 
-form button:hover {
-	background-color: #0056b3;
-}
+/*form button:hover {*/
+/*	background-color: #0056b3;*/
+/*}*/
 
-/* Footer */
-footer {
-	text-align: center;
-	padding: 1rem;
-	background-color: #007BFF;
-	color: white;
-}
+/*!* Footer *!*/
+/*footer {*/
+/*	text-align: center;*/
+/*	padding: 1rem;*/
+/*	background-color: #007BFF;*/
+/*	color: white;*/
+/*}*/
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-	.hero {
-		flex-direction: column;
-	}
+/*!* Media queries for responsiveness *!*/
+/*@media (max-width: 768px) {*/
+/*	.hero {*/
+/*		flex-direction: column;*/
+/*	}*/
 
-	.hero-blue, .hero-yellow {
-		flex: none;
-		width: 100%;
-	}
-}
+/*	.hero-blue, .hero-yellow {*/
+/*		flex: none;*/
+/*		width: 100%;*/
+/*	}*/
+/*}*/
