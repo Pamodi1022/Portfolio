@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Google Font: Roboto */
 @font-face {
 	font-family: 'Open Sans';
@@ -434,9 +433,6 @@ h1 {
 	width: 45%; /* Divide content into two sides */
 }
 
-
-
-
 .education-section .Topic{
 	margin-top: 8vw;
 }
@@ -534,6 +530,7 @@ li {
 }
 
 
+/*skills section*/
 *{
 	padding: 0;
 	margin: 0;
@@ -558,11 +555,12 @@ li {
 }
 .skills_head h2{
 	font-size: 30px;
-	margin-bottom: -5px;
+	color: var(--base-100);
 }
 .skills_head h2 span{
 	color: #ff9800;
 }
+
 .skills_main{
 	width: 100%;
 	display: grid;
@@ -755,7 +753,7 @@ li {
 
 .bento-item h3{
 	text-align: center;
-	color: var(--base-100);
+	color: darkorange;
 }
 .bento-item p{
 	/*text-align: justify;*/
@@ -846,10 +844,10 @@ li {
 	color: var(--base-800);
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-	color: var(--base-100);
-}
+/*.contact-form input::placeholder,*/
+/*.contact-form textarea::placeholder {*/
+/*	color: var(--base-100);*/
+/*}*/
 
 .contact-form button {
 	margin-top: 1em;
