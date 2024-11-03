@@ -1,8 +1,4 @@
-/**, *::before, *::after {*/
-/*	box-sizing: border-box;*/
-/*	margin:0;*/
-/*	padding:0;*/
-/*}*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Google Font: Roboto */
 @font-face {
 	font-family: 'Open Sans';
@@ -438,11 +434,8 @@ h1 {
 	width: 45%; /* Divide content into two sides */
 }
 
-/* Topic margin adjustment */
-.Topic {
-	font-size: 2.0em;
-	margin-bottom: 2vw;
-}
+
+
 
 .education-section .Topic{
 	margin-top: 8vw;
@@ -465,8 +458,10 @@ h4 {
 	color: #cccccc;
 }
 
-h2{
+.education-section h2{
 	color:white;
+	font-size: 2.2em;
+	margin-top: 10vw;
 }
 
 p {
@@ -717,6 +712,12 @@ li {
 	display: grid;
 	justify-items: space-between;
 }
+
+.project h2{
+	color:white;
+	font-size: 2.2em;
+	margin-top: 10vw;
+}
 .project .Topic{
 	margin-top: 0;
 	text-align: center;
@@ -762,7 +763,7 @@ li {
 }
 
 
-#grid4{
+#grid4, #grid5, #grid6{
 	margin-top: 40px;
 }
 
@@ -799,8 +800,6 @@ li {
 	color: #101010;
 	font-size: 0.8em;
 }
-
-
 
 
 .contact-container {
