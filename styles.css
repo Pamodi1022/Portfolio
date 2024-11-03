@@ -20,7 +20,7 @@ body {
 	padding: 0;
 	line-height: 1.6;
 
-	background-image: url('pic3.jpg');
+	background-image: url('background.jpg');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -109,7 +109,7 @@ nav li a {
 	font-weight: bold;
 
 	&:hover {
-		background-image: url('H1.1.jpg');
+		background-image: url('navlink-background.jpg');
 		border-radius: 10px;
 		color: white;
 		font-weight: bold;
@@ -127,15 +127,6 @@ nav li a {
 	stroke-linecap: round;
 	stroke-width: 2;
 }
-
-body.dark .icon-path {
-	color: #ffffff; /* white color for dark mode */
-}
-
-body.light .icon-path {
-	color: #1f2937; /* gray color for light mode */
-}
-
 
 /* Mobile menu toggle */
 .mobile-toggle {
