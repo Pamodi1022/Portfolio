@@ -12,7 +12,7 @@ This website is a fully responsive portfolio built with HTML5 and CSS3. The goal
 - **Education**: A section detailing my educational background, including institutions attended and courses and certifications.
 - **Skills**: A list of technical skills and tools I am proficient in, with a focus on web development technologies.
 - **Projects**: Showcasing some of the key projects I have worked on, with brief descriptions and links to project repositories.
-- **Contact Form**: A simple form for visitors to reach out to me directly from the website.
+- **Contact**: A simple form for visitors to reach out to me directly from the website.
 
 ## 🚀 Technologies Used
 
