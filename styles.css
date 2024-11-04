@@ -17,7 +17,6 @@ body {
 	background-attachment: fixed;
 }
 
-
 header {
 	padding: 8px;
 }
@@ -25,6 +24,8 @@ header {
 a{
 	text-decoration: none;
 }
+
+/* Navbar basic styles*/
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -36,6 +37,7 @@ nav {
     background: linear-gradient(to top, #454444, #8c8181);
 }
 
+/*Styles for logo*/
 #logo{
 	display: flex;
 	align-items: center;
@@ -49,6 +51,7 @@ nav {
 	border-radius: 50%;
 }
 
+/*Styles for name*/
 #name {
 	text-decoration: none;
 	font-size: 1.4em;
@@ -57,7 +60,8 @@ nav {
 	color: black;
 }
 
-.logo-container {
+/*Child Combinator*/
+nav >.logo-container {
 	display: flex;
 	align-items: center;
 }
@@ -93,6 +97,12 @@ nav a {
 	font-weight: bold;
 }
 
+/* Negation Pseudo-class */
+.nav-links a:not(.external-link) {
+	color: #101010; /* Regular color for internal links */
+}
+
+
 .nav-links a:hover {
 	background: linear-gradient(to bottom, #221f1f, #303030);
 	border-radius: 10px;
@@ -101,6 +111,12 @@ nav a {
 	box-shadow: 0 3px 20px white;
 }
 
+/* Negation Pseudo-class */
+.nav-links a:not(:last-child) {
+	margin-right: 20px;
+}
+
+/*Menu icon basic styles*/
 .menu-icon {
 	width: 24px;
 	height: 24px;
@@ -177,6 +193,7 @@ h1 small {
 	display: flex;
 }
 
+/*Pseudo elements with generated content*/
 .hero-blue h1::after {
 	content: "👋"; /* Adds an icon after the heading */
 	display: inline-block; /* Enables rotation animation */
@@ -187,6 +204,7 @@ h1 small {
 
 }
 
+/*Animation*/
 @keyframes wave-animation {
 	0% { transform: rotate(0deg); }
 	25% { transform: rotate(15deg); }
@@ -194,8 +212,6 @@ h1 small {
 	75% { transform: rotate(15deg); }
 	100% { transform: rotate(0deg); }
 }
-
-
 
 .hero .hero-blue {
 	flex: 1;
@@ -228,11 +244,13 @@ h1 small {
 	margin-bottom: 10px;
 }
 
+/* Attribute selectors */
 .hero .call-to-action a[target="_blank"] {
 	color: black;
 	font-size: 18px;
 }
 
+/*Social media links styles*/
 .hero .social-links a {
 	/* Add smooth transition for hover effects */
 	display: inline-block;
@@ -243,7 +261,7 @@ h1 small {
 	transform: scale(1.2);
 }
 
-.hero .social-links a	.fa-github {
+.hero .social-links a .fa-github {
 	font-size: 2em;
 	width: 45px;
 	color: #cccccc;
@@ -254,7 +272,7 @@ h1 small {
 	color: #cccccc;
 }
 
-
+/*Basic styles for button*/
 .button {
 	display: inline-block;
 	padding: 10px 30px;
@@ -271,7 +289,7 @@ h1 small {
 	box-shadow: 0 3px 10px #838383;
 }
 
-
+/*Basic styles for image container*/
 .hero-yellow {
 	flex: 0.5;
 	padding-top: 80px;
@@ -308,8 +326,8 @@ h1 small {
 	}
 }
 
+/*Logo track styles*/
 .logos {
-	/*background-color: #1f1f2d;*/
 	background: transparent;
 	padding: 30px 0;
 }
@@ -342,7 +360,7 @@ h1 small {
 	width: 75px;
 }
 
-
+/*transform*/
 @keyframes marquee {
 	0% {
 		transform: translateX(0);
@@ -352,7 +370,7 @@ h1 small {
 	}
 }
 
-
+/*Education section styles*/
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -392,18 +410,6 @@ h1 small {
 	max-width: 1000px; /* Limit the width for larger screens */
 }
 
-.education-box::after {
-	content: 'Featured';
-	position: absolute;
-	top: 10px;
-	left: 10px;
-	background: #18ff0b;
-	color: white;
-	padding: 5px;
-	border-radius: 5px;
-}
-
-
 /* Box hover effect */
 .education-box:hover{
 	transform: scale(1.05);
@@ -442,10 +448,19 @@ h4 {
 	margin-top: 10vw;
 }
 
+/*Nth pseudo class*/
+.education-box:nth-child(odd) {
+	background-color: rgb(25, 23, 23); /* Slightly darker background for odd items */
+}
+
 p {
 	font-size: calc(0.8rem + 0.3vw); /* Adjust with screen size */
 	margin-bottom: 8px;
 	color: #cccccc;
+}
+
+h2 + p {
+	margin-top: 0;
 }
 
 /* Responsive list text */
@@ -517,7 +532,7 @@ li {
 	height: 100vh;
 	width: 74%; /* 100% - 2 * 13% padding */
 	margin: 0 auto;
-	background-color: rgba(0, 0, 0, 0.082);
+	background-color: rgba(0, 0, 0, 0.082); /*Semi transparent*/
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -550,9 +565,7 @@ li {
 	align-items: center;
 	padding:  0 10px;
 }
-.skill_bar .info p:nth-child(2){
-	font-weight: 500;
-}
+
 .skill_bar .bar{
 	width: 100%;
 	height: 10px;
@@ -567,6 +580,8 @@ li {
 	background-color: #ff9800;
 	border-radius: 256px;
 }
+
+/*Skill bar animation*/
 .skill_bar .bar .html{
 	width: 90%;
 	animation: html 2s;
@@ -716,7 +731,6 @@ li {
 
 /* Animation for hovering on the entire bento-item */
 .bento-item {
-	/*position: relative;*/
 	overflow: hidden;
 	/*background-color: var(--base-800);*/
 	background: linear-gradient(to top, #101010, #302f2f);
@@ -732,7 +746,6 @@ li {
 }
 
 .bento-item p{
-	/*text-align: justify;*/
 	font-size: 0.8em;
 }
 
@@ -776,6 +789,7 @@ li {
 }
 
 
+/*Contact form styles*/
 .contact-container {
 	display: flex;
 	justify-content: center;
@@ -810,6 +824,7 @@ li {
 	color: #ffffff;
 }
 
+
 .contact-form input,
 .contact-form textarea {
 	padding: 0.5em;
@@ -819,7 +834,6 @@ li {
 	background-color: rgba(255, 255, 255, 0.2);
 	color: black;
 }
-
 
 .contact-form button {
 	margin-top: 1em;
