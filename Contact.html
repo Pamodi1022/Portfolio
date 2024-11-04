@@ -1,21 +1,29 @@
 <!doctype html>
 <html lang="en">
 <head>
+	<!-- Metadata and Document Setup -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio</title>
+	<!-- Google Fonts-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./styles.css">
+	<!-- Favicon for Browser Tab Icon -->
 	<link rel="icon" type="image/jpg" href="Pamodi.png">
+	<!-- Font Awesome for Icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
+<!-- Header Section -->
 <header>
+	<!-- Navigation Bar -->
 	<nav id="navlist">
+		<!-- Checkbox for Mobile Toggle -->
 		<input type="checkbox" id="menu-toggle" class="mobile-toggle">
 		<label for="menu-toggle" class="mobile-toggle-label">
+			<!-- SVG Icon for Menu (Hamburger Icon) -->
 			<svg class="menu-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 				<path class="icon-path" d="M5 7h14M5 12h14M5 17h10"/>
 			</svg>
@@ -25,6 +33,7 @@
 			<a id="name">Portfolio Website</a>
 		</div>
 
+		<!-- Navigation Links -->
 		<div class="nav-links">
 			<a href="index.html#">HOME</a>
 			<a href="index.html#education">ABOUT</a>
@@ -35,10 +44,13 @@
 	</nav>
 </header>
 
+<!-- Contact Section -->
 <div class="contact-container">
 	<div class="contact">
 		<h2>Contact Me</h2>
+		<!-- Contact Form -->
 		<form class="contact-form">
+			<!-- Input fields for user's name, email, subject, and message -->
 			<label for="username">Name:</label>
 			<input type="text" id="username" name="name" required>
 
@@ -51,14 +63,15 @@
 			<label for="message">Message:</label>
 			<textarea id="message" name="message" rows="5" required></textarea>
 
+			<!-- Submit Button -->
 			<button type="submit">Send Message</button>
 		</form>
 	</div>
 </div>
 
-
-
+<!-- Footer Section -->
 <footer class="footer">
+	<!-- Copyright Information -->
 	<p>&copy; 2024  Pamodi Pansiluni.  All rights reserved.</p>
 	<div class="social-links">
 		<a href="https://github.com/Pamodi1022" target="_blank">
