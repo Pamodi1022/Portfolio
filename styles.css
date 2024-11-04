@@ -177,6 +177,26 @@ h1 small {
 	display: flex;
 }
 
+.hero-blue h1::after {
+	content: "👋"; /* Adds an icon after the heading */
+	display: inline-block; /* Enables rotation animation */
+	animation: wave-animation 1.5s ease-in-out infinite; /* Waving effect */
+	color: #4B9CD3; /* A calm blue color */
+	margin-left: 8px; /* Space between heading and icon */
+	font-size: 1.0em; /* Slightly larger icon */
+
+}
+
+@keyframes wave-animation {
+	0% { transform: rotate(0deg); }
+	25% { transform: rotate(15deg); }
+	50% { transform: rotate(-15deg); }
+	75% { transform: rotate(15deg); }
+	100% { transform: rotate(0deg); }
+}
+
+
+
 .hero .hero-blue {
 	flex: 1;
 	border-radius: 30px;
@@ -371,6 +391,18 @@ h1 small {
 	width: 100%;
 	max-width: 1000px; /* Limit the width for larger screens */
 }
+
+.education-box::after {
+	content: 'Featured';
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: #18ff0b;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+}
+
 
 /* Box hover effect */
 .education-box:hover{
