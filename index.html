@@ -1,18 +1,25 @@
 <!doctype html>
 <html lang="en">
 <head>
+	<!--Meta character encoding-->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Title of the web page-->
 	<title>Portfolio</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!--link for google font style sheet-->
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<!--link to external styles sheet-->
 	<link rel="stylesheet" href="./styles.css">
+	<!--Favicon icon that appears in the browser tab-->
 	<link rel="icon" type="image/jpg" href="Pamodi.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
+<!--Header section containing navigation bar-->
 <header>
+	<!--Navigation bar-->
 	<nav id="navlist">
 		<input type="checkbox" id="menu-toggle" class="mobile-toggle">
 		<label for="menu-toggle" class="mobile-toggle-label">
@@ -20,11 +27,13 @@
 				<path class="icon-path" d="M5 7h14M5 12h14M5 17h10"/>
 			</svg>
 		</label>
+		<!--logo section withe website title-->
 		<div class="logo-container">
 			<div id="logo">PP</div>
 			<a id="name">Portfolio Website</a>
 		</div>
 
+		<!--navigation links-->
 		<div class="nav-links">
 			<a href="#">HOME</a>
 			<a href="#education">ABOUT</a>
@@ -34,7 +43,9 @@
 		</div>
 	</nav>
 </header>
+<!-- Main section with introduction and contact details -->
 <main>
+	<!-- Hero section with welcome message and personal description -->
 	<div class="hero">
 		<div class="hero-blue">
 			<div>
@@ -44,6 +55,7 @@
 				<p class="text">
 					Dedicated undergraduate with a strong work ethic, passionate about growth, and adept at thriving in challenging settings. A skilled team player committed to achieving goals through effective management skills.
 				</p>
+				<!--View resume and contacting-->
 				<div class="call-to-action">
 					<a href="./CV.pdf" class="button black" target="_blank">
 						View Resume
@@ -52,6 +64,7 @@
 						Contact Me
 					</a>
 				</div>
+				<!--Social links-->
 				<div class="social-links">
 					<a href="https://github.com/Pamodi1022" target="_blank">
 						<i class="fa-brands fa-github"></i>
@@ -62,15 +75,18 @@
 				</div>
 			</div>
 		</div>
+		<!-- Image section for personal photo -->
 		<div class="hero-yellow">
 			<img src="Pamodi.png" alt="Pamodi_Pansiluni">
 		</div>
 
 	</div>
 </main>
+<!-- Logo showcase section with a scrolling marquee of technology logos -->
 <div class="logos container">
 	<div class="marquee">
 		<div class="track">
+			<!--List of logos-->
 			<img src="html.png" alt="HTML">
 			<img src="css.png" alt="CSS">
 			<img src="javascript.png" alt="JS">
@@ -103,6 +119,7 @@
 	</div>
 </div>
 
+<!-- Education section with details of academic and professional background -->
 <section id="education" class="education-section">
 	<h2>EDUCATION</h2>
 	<div class="education-box">
@@ -150,6 +167,7 @@
 	</div>
 </section>
 
+<!-- Skills section showcasing expertise in various technologies -->
 <div class="skills_section" id="skills">
 	<div class="skills_head">
 		<h2>My <span>Skills</span></h2>
@@ -157,6 +175,7 @@
 	</div>
 
 	<div class="skills_main">
+		<!-- Each skill represented with a progress bar -->
 		<div class="skill_bar">
 			<div class="info">
 				<p>HTML</p>
@@ -239,6 +258,8 @@
 		</div>
 	</div>
 </div>
+
+<!-- Footer section with copyright and additional links -->
 <footer class="footer">
 	<p>&copy; 2024  Pamodi Pansiluni.  All rights reserved.</p>
 	<div class="social-links">
