@@ -31,6 +31,7 @@ body {
 header {
 	padding: 8px;
 }
+
 a{
 	text-decoration: none;
 }
@@ -42,12 +43,10 @@ nav {
 	left: 0;
 	width: 100%;
 	z-index: 1000;
-	background: linear-gradient(to top, #454444, #8c8181);
-
-
+    background: linear-gradient(to top, #454444, #8c8181);
 }
 
-nav #logo{
+#logo{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -56,12 +55,11 @@ nav #logo{
 	color: white;
 	height: 54px;
 	width: 54px;
-	margin-right: 30px;
 	margin-left: 30px;
 	border-radius: 50%;
 }
 
-nav li#name {
+#name {
 	text-decoration: none;
 	font-size: 1.4em;
 	font-weight: bold;
@@ -74,42 +72,39 @@ nav li#name {
 	align-items: center;
 }
 
-nav ul {
-	list-style-type: none;
-	display: flex;
-	gap: 10px;
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	justify-content: space-between;
+
+.nav-links a {
+    font-size: 0.9em;
+    color: #555;
+    text-decoration: none;
+    margin-right: 35px;
+    font-weight: 500;
+    transition: .3s;
 }
 
-nav ul li  a {
+.nav-links a {
 	transition: color 0.3s;
 }
 
-nav li {
+.nav-links a {
 	display: inline-block;
 	margin: 10px 15px;
+    padding: 4px 20px;
 }
+
 
 nav a {
-	display: inline-block;
-	padding: 2px 20px;
-	/*color: var(--base-100);*/
-}
-
-nav li a {
 	padding: 8px 12px;
 	transition: background-color 0.3s, color 0.3s;
 }
 
-.nav-links li a {
+.nav-links a {
 	color: var(--base-800);
 	font-weight: bold;
 
 	&:hover {
-		background-image: url('navlink-background.jpg');
+		/*background-image: url('navlink-background.jpg');*/
+		background: linear-gradient(to bottom, #221f1f, #303030);
 		border-radius: 10px;
 		color: white;
 		font-weight: bold;
@@ -151,7 +146,7 @@ nav li a {
 		cursor: pointer;
 	}
 
-	.nav-links {
+	.nav-links  {
 		display: none; /* Hide menu links by default */
 		flex-direction: column;
 		width: 100%;
@@ -159,8 +154,9 @@ nav li a {
 		color: black;
 	}
 
-	#menu-toggle:checked ~ ul .nav-links {
+	#menu-toggle:checked ~ .nav-links {
 		display: flex;
+
 	}
 
 	.mobile-toggle {
@@ -315,6 +311,7 @@ h1 {
 		align-items: center;
 	}
 }
+
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
 	.hero {
@@ -326,7 +323,6 @@ h1 {
 		width: 100%;
 	}
 }
-
 
 .logos {
 	/*background-color: #1f1f2d;*/
@@ -835,10 +831,6 @@ li {
 	color: var(--base-800);
 }
 
-/*.contact-form input::placeholder,*/
-/*.contact-form textarea::placeholder {*/
-/*	color: var(--base-100);*/
-/*}*/
 
 .contact-form button {
 	margin-top: 1em;
